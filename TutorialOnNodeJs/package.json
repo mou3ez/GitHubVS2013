@@ -1,0 +1,17 @@
+{
+  "name": "tutorial-on-node-js",
+  "version": "0.0.0",
+  "description": "TutorialOnNodeJs",
+  "main": "app.js",
+  "author": {
+    "name": "moez latrach",
+    "email": ""
+  },
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "3.4.4",
+    "jade": "*",
+    "mysql": "^2.11.0",
+    "stylus": "*"
+  }
+}
