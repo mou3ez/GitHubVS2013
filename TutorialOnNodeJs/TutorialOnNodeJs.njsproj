@@ -31,10 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="bower_components\angular\angular.js" />
+    <Compile Include="bower_components\angular\angular.min.js" />
+    <Compile Include="bower_components\angular\index.js" />
+    <Content Include="public\javascripts\app\productCategory\productCategoryModule.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\productCategoryRouteConfig.js" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bower_components\angular\.bower.json" />
+    <Content Include="bower_components\angular\angular-csp.css" />
+    <Content Include="bower_components\angular\angular.min.js.gzip" />
+    <Content Include="bower_components\angular\angular.min.js.map" />
+    <Content Include="bower_components\angular\bower.json" />
+    <Content Include="bower_components\angular\LICENSE.md" />
+    <Content Include="bower_components\angular\package.json" />
+    <Content Include="bower_components\angular\README.md" />
     <Content Include="public\javascripts\bootstrap.js" />
     <Content Include="public\javascripts\bootstrap.min.js" />
     <Content Include="public\javascripts\jquery-1.10.2.intellisense.js" />
@@ -68,10 +80,14 @@
     <Content Include="views\viewProductCategory.ejs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bower_components\" />
+    <Folder Include="bower_components\angular\" />
     <Folder Include="public\" />
     <Folder Include="public\fonts\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
+    <Folder Include="public\javascripts\app\" />
+    <Folder Include="public\javascripts\app\productCategory\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
