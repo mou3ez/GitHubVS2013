@@ -28,6 +28,24 @@ productCategoryRouteConfig.prototype.addRoutes = function () {
         }
     });
     
+    
+    self.routeTable.push({
+        
+        requestType : 'post',
+        requestUrl : '/createProductCategory',
+        callbackFunction : function (request, response) {
+            
+          //  response.render('createProductCategory', { title : "Create Product Category" });
+
+          // we will have DAO api that knows how to persist data into the mysql
+
+            dao.createProductCategory(product, function (statut) {
+                response.json("")
+            });
+        }
+    });
+
+    
     self.routeTable.push({
         requestType : 'get',
         requestUrl : '/viewProductCategory',

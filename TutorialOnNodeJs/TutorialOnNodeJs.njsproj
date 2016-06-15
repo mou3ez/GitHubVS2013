@@ -35,6 +35,8 @@
     <Compile Include="bower_components\angular\angular.min.js" />
     <Compile Include="bower_components\angular\index.js" />
     <Content Include="public\javascripts\app\productCategory\productCategoryModule.js" />
+    <Content Include="public\javascripts\app\productCategory\productCategoryController.js" />
+    <Content Include="public\javascripts\app\productCategory\productCategoryService.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\productCategoryRouteConfig.js" />
   </ItemGroup>
