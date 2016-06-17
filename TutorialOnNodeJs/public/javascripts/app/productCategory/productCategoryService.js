@@ -3,7 +3,7 @@
 
 productCategoryService.$inject = ['$http'];
 
-function productCategoryService($scope) {
+function productCategoryService($http) {
 
     return {
 
@@ -11,7 +11,7 @@ function productCategoryService($scope) {
 
             return $http.post('/createProductCategory',
                 {
-                    categoryName: productCategoryName,
+                    categoryName: productCategory.categoryName,
                     details :productCategory.categoryDetails
                 }
                 );

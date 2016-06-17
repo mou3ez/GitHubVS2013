@@ -34,6 +34,9 @@
     <Compile Include="bower_components\angular\angular.js" />
     <Compile Include="bower_components\angular\angular.min.js" />
     <Compile Include="bower_components\angular\index.js" />
+    <Compile Include="server\Dao\productCategoryDao.js" />
+    <Compile Include="server\mysqlConnectionString.js" />
+    <Compile Include="server\mysqlConnectionStringProvider.js" />
     <Content Include="public\javascripts\app\productCategory\productCategoryModule.js" />
     <Content Include="public\javascripts\app\productCategory\productCategoryController.js" />
     <Content Include="public\javascripts\app\productCategory\productCategoryService.js" />
@@ -84,6 +87,7 @@
   <ItemGroup>
     <Folder Include="bower_components\" />
     <Folder Include="bower_components\angular\" />
+    <Folder Include="server\" />
     <Folder Include="public\" />
     <Folder Include="public\fonts\" />
     <Folder Include="public\images\" />
@@ -92,6 +96,7 @@
     <Folder Include="public\javascripts\app\productCategory\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
+    <Folder Include="server\Dao\" />
     <Folder Include="views\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->

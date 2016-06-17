@@ -16,7 +16,7 @@ function productCategoryController($scope, $timeout , productCategoryService) {
     $scope.createProductCategory = function (productCategory) {
 
         productCategoryService.createProductCategory(productCategory)
-        .sucess(function (data) {
+        .success(function (data) {
 
        /*     $timeout(function () {
               
