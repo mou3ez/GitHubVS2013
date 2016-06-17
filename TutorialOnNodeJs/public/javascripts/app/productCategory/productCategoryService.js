@@ -12,7 +12,7 @@ function productCategoryService($http) {
             return $http.post('/createProductCategory',
                 {
                     categoryName: productCategory.categoryName,
-                    details :productCategory.categoryDetails
+                    details: productCategory.details
                 }
                 );
         }

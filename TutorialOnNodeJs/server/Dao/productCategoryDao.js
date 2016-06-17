@@ -13,7 +13,7 @@ var productCategoryDao = {
             
             
             CategoryName : productCategory.categoryName,
-            Details: productCategory.details,
+            details: productCategory.details,
             IsValid : true,
             CreatedDate : new Date()
         };
