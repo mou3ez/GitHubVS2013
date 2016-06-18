@@ -35,6 +35,10 @@
     <Compile Include="bower_components\angular\angular.min.js" />
     <Compile Include="bower_components\angular\index.js" />
     <Content Include="public\javascripts\app\requiredFieldValidationService.js" />
+    <Content Include="public\javascripts\app\productCategory\viewProductCategoryController.js">
+      <SubType>Code</SubType>
+      <TestFramework>ExportRunner</TestFramework>
+    </Content>
     <Compile Include="server\Dao\productCategoryDao.js" />
     <Compile Include="server\mysqlConnectionString.js" />
     <Compile Include="server\mysqlConnectionStringProvider.js" />
@@ -82,7 +86,9 @@
     <Content Include="views\createProductCategory.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="views\layout.ejs" />
+    <Content Include="views\productCategoryGrid.ejs" />
     <Content Include="views\test.html" />
+    <Content Include="views\validationSummary.ejs" />
     <Content Include="views\viewProductCategory.ejs" />
   </ItemGroup>
   <ItemGroup>

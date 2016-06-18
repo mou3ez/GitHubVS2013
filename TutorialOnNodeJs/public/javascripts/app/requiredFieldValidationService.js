@@ -1,13 +1,14 @@
 ﻿angular.module("productCategoryModule")
 .factory("requiredFieldValidationService", requiredFieldValidationService);
 
+function requiredFieldValidationService() {
 
-function _getRequiredValidationMessage(requiredInfo) {
+function _getRequiredValidationMessage(requiredInfos) {
 
     var errorMessage = [];
-    if (requiredInfo.length > 0) {
+    if (requiredInfos.length > 0) {
 
-        angular.forEach(requiredInfo, function (requiredInf) {
+        angular.forEach(requiredInfos, function (requiredInfo) {
 
             if (
 
@@ -27,7 +28,7 @@ function _getRequiredValidationMessage(requiredInfo) {
 }
 return {
 
-    getRequiredValidationMessage: _getRequiredValidationMessage
+    getRequiredValidationMessage : _getRequiredValidationMessage
 };
 }
 

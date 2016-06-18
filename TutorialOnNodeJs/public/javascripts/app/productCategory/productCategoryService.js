@@ -15,6 +15,9 @@ function productCategoryService($http) {
                     details: productCategory.details
                 }
                 );
+        },
+        getAllProductCategories: function () {
+            return $http('/getAllProductCategory')
         }
     };
 
