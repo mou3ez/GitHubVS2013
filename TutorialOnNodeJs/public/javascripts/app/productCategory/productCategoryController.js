@@ -47,14 +47,14 @@ function productCategoryController($scope, $timeout, productCategoryService, req
 
     $scope.createProductCategory = function (productCategory) {
 
-        var validationMessages = requiredFieldValidationService.validationErrorMessage(
+        var validationMessages = requiredFieldValidationService.getRequiredFieldValidationErrorMessage(
         [
-            { name: $scope.productCategory.categoryName || "", errorMessage: 'Enter name' },
+            { name: $scope.productCategory.categoryName || "", errorMessage: 'Enter name\n' },
                { name: $scope.productCategory.categoryDetails || "", errorMessage: 'Enter details' }
 
         ]);
 
-        if (validationMessages.length > 0) {
+        if (validationMessages .length > 0) {
 
             $scope.validationResult.containsValidationError = true;
 
@@ -76,8 +76,8 @@ function productCategoryController($scope, $timeout, productCategoryService, req
 
                  if (data.status
                      && data.status == 'successful')
-                     displayMessage;
-                 $timeout(function () {
+                     displayMessage();
+                 $timeout(function afterTimeOut () {
                      clearMessage();
                      clearProductCategory();
 

@@ -1,7 +1,7 @@
 ﻿<table
        data-ng-show="productCategories.length > 0"
 
-       class="table table-striped table-hover">
+       class='table table-striped table-hover'>
 
     <tr class="success">
         <td>Category Name</td>
@@ -14,7 +14,7 @@
     <tr data-ng-repeat="productCategory in productCategories">
         <td>{{productCategory.CategoryName}}</td>
         <td>{{productCategory.Details}}</td>
-        <td>{{productCategory.IsValid =="1" ? "valid" ; "Invalid"}}</td>
+        <td>{{productCategory.IsValid =="1" ? "valid" : "Invalid"}}</td>
         <td>{{productCategory.CreatedDate}}</td>
         <td class="info">
 

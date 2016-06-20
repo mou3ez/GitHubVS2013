@@ -7,6 +7,8 @@ function viewProductCategoryController($scope, $timeout, productCategoryService)
 
     $scope.productCategories = [];
 
+    getAllProductCategories();
+
     function getAllProductCategories(){
 
         productCategoryService.getAllProductCategories().

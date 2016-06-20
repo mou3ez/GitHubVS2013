@@ -86,6 +86,7 @@
     <Content Include="views\createProductCategory.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="views\layout.ejs" />
+    <Content Include="views\message.ejs" />
     <Content Include="views\productCategoryGrid.ejs" />
     <Content Include="views\test.html" />
     <Content Include="views\validationSummary.ejs" />
