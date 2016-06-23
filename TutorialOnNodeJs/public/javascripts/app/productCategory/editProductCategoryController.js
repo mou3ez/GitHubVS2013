@@ -1,9 +1,9 @@
 ﻿angular.module("productCategoryModule")
 .controller("editProductCategoryController", editProductCategoryController);
 
-editProductCategoryController.$inject = ['$scope',  '$timeout', 'productCategoryService'];
+editProductCategoryController.$inject = ['$scope', '$timeout', 'productCategoryService'];
 
-function editProductCategoryController($scope, $timeout, $location, productCategoryService) {
+function editProductCategoryController($scope, $timeout, productCategoryService) {
 
     $scope.productCategory = {
 
@@ -23,7 +23,8 @@ function editProductCategoryController($scope, $timeout, $location, productCateg
 
     function getProductCategoryById() {
 
-        productCategoryService.getProductCategoryById(productCategoryService.getIdFromEndPoint()).
+        productCategoryService.getProductCategoryById
+            (productCategoryService.getIdFromEndPoint()).
         success(function (data) {
 
             if (data 

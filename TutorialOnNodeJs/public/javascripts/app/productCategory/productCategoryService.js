@@ -1,9 +1,9 @@
 ﻿angular.module("productCategoryModule")
 .factory("productCategoryService", productCategoryService);
 
-productCategoryService.$inject = ['$http'];
+productCategoryService.$inject = ['$http', '$location'];
 
-function productCategoryService($http) {
+function productCategoryService($http, $location) {
 
     return {
 
@@ -17,14 +17,14 @@ function productCategoryService($http) {
                 );
         },
 
-        getAllProductCategories: function () {
+        getAllProductCategories : function () {
             return $http.get('/api/getAllProductCategory');
         },
 
         getIdFromEndPoint : function () {
 
-            var absoluteUrl = $location.absoUrl();
-            var segment = absoluteUrl.spllit("/");
+            var absoluteUrl = $location.absUrl();
+            var segments = absoluteUrl.split("/");
             var productCategoryId = segments[segments.length - 1];
             return productCategoryId
         },
