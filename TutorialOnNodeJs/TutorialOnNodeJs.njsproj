@@ -39,6 +39,7 @@
       <SubType>Code</SubType>
       <TestFramework>ExportRunner</TestFramework>
     </Content>
+    <Content Include="public\javascripts\app\productCategory\editProductCategoryController.js" />
     <Compile Include="server\Dao\productCategoryDao.js" />
     <Compile Include="server\mysqlConnectionString.js" />
     <Compile Include="server\mysqlConnectionStringProvider.js" />
@@ -85,8 +86,10 @@
     <Content Include="views\about.ejs" />
     <Content Include="views\createProductCategory.ejs" />
     <Content Include="views\index.ejs" />
+    <Content Include="views\editProductCategory.ejs" />
     <Content Include="views\layout.ejs" />
     <Content Include="views\message.ejs" />
+    <Content Include="views\pageTitle.ejs" />
     <Content Include="views\productCategoryGrid.ejs" />
     <Content Include="views\test.html" />
     <Content Include="views\validationSummary.ejs" />

@@ -16,9 +16,25 @@ function productCategoryService($http) {
                 }
                 );
         },
+
         getAllProductCategories: function () {
-            return $http.get('/api/getAllProductCategory')
+            return $http.get('/api/getAllProductCategory');
+        },
+
+        getIdFromEndPoint : function () {
+
+            var absoluteUrl = $location.absoUrl();
+            var segment = absoluteUrl.spllit("/");
+            var productCategoryId = segments[segments.length - 1];
+            return productCategoryId
+        },
+
+
+        getProductCategoryById : function (productCategoryId) {
+
+            return $http.get('/api/getProductCategoryById/' + productCategoryId);
         }
+
     };
 
 

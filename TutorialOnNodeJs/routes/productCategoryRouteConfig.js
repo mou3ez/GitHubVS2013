@@ -171,7 +171,15 @@ productCategoryRouteConfig.prototype.addRoutes = function () {
 
     });
 
-
+    self.routeTable.push({
+        
+        requestType : 'get',
+        requestUrl : '/editProductCategory/:productCategoryId',
+        callbackFunction : function (request, response) {
+            
+            response.render('editProductCategory', { title : "Edit Product Category" });
+        }
+    });
 
     
     

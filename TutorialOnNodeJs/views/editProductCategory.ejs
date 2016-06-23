@@ -1,0 +1,61 @@
+﻿<% include layout %>
+
+<% include pageTitle %>
+
+<div class="panel-body">
+
+    <div class="container"
+         data-ng-cloak
+         data-ng-app="productCategoryModule"
+         data-ng-controller="editProductCategoryController">
+
+        <% include message %>
+
+        <form class="navbar-form navbar-left" role="search"
+              method="post"
+              name="formProductCategory">
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="">Product Category Name</label>
+                    &nbsp;&nbsp;
+
+                    <input type="text" class="form-control"
+                           placeholder="Please Enter Prodct Category"
+                           name="productCatgory" id="productCatgory"
+                           ng-model="productCategory.categoryName"
+                           style="width:100%" required />
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="productDetails">Product Cateory Details</label>
+                    <textarea class="form-control" placeholder="Product Cateory Details"
+                              name="productDetails" id="productDetails"
+                              rows="5" cols="30" style="width:100%" required
+                              ng-model="productCategory.details"></textarea>
+                </div>
+            </div>
+
+            <div>&nbsp;</div>
+            <div class="row">
+                <div class="form-group" style="padding-left:40%">
+                    <button type="button" class="btn-primary"
+                            ng-click="createProductCategory(productCategory)">
+                        Edit product Category
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="../../javascripts/app/productCategory/productCategoryModule.js"></script>
+    <script src="../../javascripts/app/productCategory/productCategoryService.js"></script>
+    <script src="../../javascripts/app/productCategory/editProductCategoryController.js"></script>
+  
+
