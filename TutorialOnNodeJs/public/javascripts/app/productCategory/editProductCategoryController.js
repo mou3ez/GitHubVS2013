@@ -16,8 +16,8 @@ function editProductCategoryController($scope, $timeout, productCategoryService)
 
     function bindView(productCategory) {
 
-        $scope.productCategory.categoryName = productCategory.categoryName;
-        $scope.productCategory.categoryDetails = productCategory.categoryDetails;
+        $scope.productCategory.categoryName = productCategory.CategoryName;
+        $scope.productCategory.details = productCategory.Details;
 
     }
 
