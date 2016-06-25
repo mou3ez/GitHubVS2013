@@ -6,7 +6,7 @@ function requiredFieldValidationService() {
 
 function _getRequiredValidationMessage(requiredInfos) {
 
-    var errorMessage = [];
+    var errorMessages = [];
     if (requiredInfos.length > 0) {
 
         angular.forEach(requiredInfos, function (requiredInfo) {
@@ -21,15 +21,15 @@ function _getRequiredValidationMessage(requiredInfos) {
                 || requiredInfo.name == ''
                 || requiredInfo.name.length == 0)
               ) {
-                errorMessage.push(requiredInfo.errorMessage);
+                errorMessages.push(requiredInfo.errorMessage);
             }
         });
     }
-    return errorMessage;
+    return errorMessages;
 }
 return {
 
-    getRequiredFieldValidationErrorMessage: _getRequiredValidationMessage
+    getRequiredFieldValidationErrorMessage : _getRequiredValidationMessage
 };
 }
 

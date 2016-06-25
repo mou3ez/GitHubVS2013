@@ -33,9 +33,25 @@ function productCategoryService($http, $location) {
         getProductCategoryById : function (productCategoryId) {
 
             return $http.get('/api/getProductCategoryById/' + productCategoryId);
+        },
+
+        updateProductCategory : function (productCategory, productCategoryId) {
+
+    console.log(productCategory.categoryName);
+    console.log(productCategory.details);
+    console.log(productCategoryId);
+
+
+    return $http.post('/updateProductCategory',
+        {
+            categoryName: productCategory.categoryName,
+            details: productCategory.details,
+            productCategoryId : productCategoryId
         }
+        );
+
+}
 
     };
-
 
 }

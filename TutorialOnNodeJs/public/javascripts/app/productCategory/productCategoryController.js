@@ -50,11 +50,11 @@ function productCategoryController($scope, $timeout, productCategoryService, req
         var validationMessages = requiredFieldValidationService.getRequiredFieldValidationErrorMessage(
         [
             { name: $scope.productCategory.categoryName || "", errorMessage: 'Enter name\n' },
-               { name: $scope.productCategory.categoryDetails || "", errorMessage: 'Enter details' }
+            { name: $scope.productCategory.details || "", errorMessage: 'Enter details' }
 
         ]);
 
-        if (validationMessages .length > 0) {
+        if (validationMessages.length > 0) {
 
             $scope.validationResult.containsValidationError = true;
 

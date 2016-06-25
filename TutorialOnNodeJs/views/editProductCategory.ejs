@@ -1,7 +1,7 @@
 ﻿<% include layout %>
 
 <% include pageTitle %>
-
+<div class="container">
 <div class="panel-body">
 
     <div class="container"
@@ -45,17 +45,19 @@
             <div class="row">
                 <div class="form-group" style="padding-left:40%">
                     <button type="button" class="btn-primary"
-                            ng-click="createProductCategory(productCategory)">
+                            ng-click="editProductCategory()">
                         Edit product Category
                     </button>
                 </div>
             </div>
         </form>
-
+		</div>
     </div>
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="../../javascripts/app/productCategory/productCategoryModule.js"></script>
     <script src="../../javascripts/app/productCategory/productCategoryService.js"></script>
     <script src="../../javascripts/app/productCategory/editProductCategoryController.js"></script>
+	<script src="../../javascripts/app/requiredFieldValidationService.js"></script>
+ 
   
 
