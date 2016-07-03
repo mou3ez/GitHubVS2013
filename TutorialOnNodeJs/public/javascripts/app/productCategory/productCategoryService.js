@@ -42,7 +42,7 @@ function productCategoryService($http, $location) {
     console.log(productCategoryId);
 
 
-    return $http.post('/updateProductCategory',
+    return $http.post('/api/updateProductCategory',
         {
             categoryName: productCategory.categoryName,
             details: productCategory.details,

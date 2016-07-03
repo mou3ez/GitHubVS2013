@@ -1,9 +1,9 @@
 ﻿angular.module("productCategoryModule")
 .controller("editProductCategoryController", editProductCategoryController);
 
-editProductCategoryController.$inject = ['$scope', '$timeout', 'productCategoryService'];
+editProductCategoryController.$inject = ['$scope', '$timeout', 'productCategoryService', 'requiredFieldValidationService'];
 
-function editProductCategoryController($scope, $timeout, productCategoryService) {
+function editProductCategoryController($scope, $timeout, productCategoryService, requiredFieldValidationService) {
 
     $scope.productCategory = {
 
